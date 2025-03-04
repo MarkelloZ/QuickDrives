@@ -1,0 +1,103 @@
+/* 🔹 Κεντρική Διάταξη */
+.cars-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 🔹 Φίλτρα */
+.filters-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filters-container input, .filters-container select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.clear-filters {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clear-filters:hover {
+    background: darkred;
+}
+
+/* 🔹 Λίστα Αυτοκινήτων */
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* 🔹 Κάρτα Αυτοκινήτου */
+.car-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Εικόνα Αυτοκινήτου */
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 🔹 Πληροφορίες Αυτοκινήτου */
+.car-info {
+    margin-top: 10px;
+}
+
+.car-info h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+/* 🔹 Κουμπί Ενοικίασης */
+.rent-button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rent-button:hover {
+    background: #0056b3;
+}
+
+/* 🔹 Μήνυμα όταν δεν υπάρχουν αποτελέσματα */
+.no-results {
+    font-size: 18px;
+    color: gray;
+    margin-top: 20px;
+}
